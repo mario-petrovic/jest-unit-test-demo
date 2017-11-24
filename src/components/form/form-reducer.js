@@ -8,6 +8,7 @@ export const INITIAL_STATE = {
 export default function formReducer (state = INITIAL_STATE, action) {
     switch (action.type) {
         case ActionTypes.SET_NAME:
+        console.log('setName')
             return {
                 ...state,
                 name: action.name
